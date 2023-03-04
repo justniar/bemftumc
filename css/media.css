@@ -1,0 +1,138 @@
+
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 10px 20px;
+        background-color:black;
+    }
+
+    header nav{
+        display: none;
+    }
+    header nav.active{
+        width: 100%;
+        height: calc(100%-68px);
+        position: fixed;
+        top: 68px; 
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header nav li{
+        margin-left: 0;
+
+    }
+    header nav li a{
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight:300 ;
+
+    }
+    
+    .sticky .logo{
+        color: white;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(/asset/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(/asset/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky.menuToggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 30px;
+        display:flex;
+        flex-direction: column;
+    }
+    .about{
+        min-height: 40vh;
+        padding: 0;
+    }
+    .article1{
+        margin: 0;
+    }
+    .figure1 img{
+        max-width:90%;
+
+    }
+    .activity{
+        margin: auto;
+        padding: 0;
+    }
+    .kegiatan{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .kegiatan .card {
+        width: 100%;
+        padding: 0;
+    }
+    .activity article .card {
+        width: 100%;
+        margin: 10px;
+    }
+    .banner .content h2{
+        font-size: 3em ;
+        color: #fff;
+    }
+    .about article{
+        flex-direction: column;
+    }
+    .coach{
+        margin: auto;
+    }
+    .coach .card{
+        flex-direction: column;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    aside {
+        display:block;
+        flex-direction: column;
+        justify-content:space-around;
+        background: white;
+        width: 100%;
+        max-height: fit-content;
+        margin: 10px;
+    }
+    footer{
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        font-size: 12px;
+    }
+    .carrousel img{
+        width: calc(100%/2);
+    }
+    .data-image-salsa img{
+        padding: 0 100%;
+    }
+
+}
+
+@media screen and(max-width:350px) {
+    .carrousel img{
+        width: calc(100%/4);
+    }
+    .data-image-salsa img{
+        padding: 0 100%;
+    }
+}

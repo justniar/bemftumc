@@ -1,0 +1,99 @@
+/* article */
+.about{
+    margin: 20px;
+    max-height:100vh;
+}
+.article1{
+    gap:2em;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+.word h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.article1{
+    margin: 2em;
+    box-sizing: border-box;
+}
+.article1 .word{
+    margin: 20px;
+    text-align: justify;
+}
+.article1 h2{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;    
+}
+.article1 h2 span{
+    color: red;
+    font-weight: 700;
+}
+.word p{
+    margin-top: 20px;
+}
+.figure1 img{
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.05);
+    margin: 20px;
+}
+.figure2 img{
+    border-radius: 10px;
+}
+
+/* activity */
+.activity{
+    margin:auto 5rem;
+    max-width: calc(100%-80px);
+}
+.kegiatan{
+    display: flex;
+    flex-direction: row;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: #111;
+}
+.activity article{
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.activity article .card{
+    display: inline;
+    width: 45%;
+    margin: 20px;
+    padding: 1em;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.card figure{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.card figure img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card figure:hover{
+    max-width: 100%;
+}
+
+.kegiatan h2, .kegiatan figure, .kegiatan p{
+    padding: 10px;
+}
+.kegiatan p{
+    text-align: justify;
+}
